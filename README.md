@@ -11,10 +11,10 @@ Shortest Job First scheduling algorithm written in Python that calculates waitin
 
 **Process**
 This Process class defines the attributes for each process:
-  - pid: Process ID (e.g., A, B, C).
-  - arrival_time: Time when the process arrives.
-  - burst_time: Time required to complete the process.
-  - completion_time, turnaround_time, waiting_time: Calculated during scheduling.
+  - `pid`: Process ID (e.g., A, B, C).
+  - `arrival_time`: Time when the process arrives.
+  - `burst_time`: Time required to complete the process.
+  - `completion_time`, `turnaround_time`, `waiting_time`: Calculated during scheduling.
 
 **calculate_sjf_non_preemptive**
 - Implements the SJF non-preemptive scheduling.
@@ -33,7 +33,7 @@ Displays a Gantt chart showing the execution order of processes.
   - Displays time intervals when each process finishes.
 
 **print_process_summary**
-- Iterates through the completed processes and prints the relevant information (pid, arrival_time, burst_time, etc.).
+- Iterates through the completed processes and prints the relevant information (`pid`, `arrival_time`, `burst_time`, etc.).
 
 **calculate_average_waiting_time**
 - Calculates the average waiting time of all processes. Sums up the waiting_time of all processes and divides by the number of processes.
@@ -41,7 +41,7 @@ Displays a Gantt chart showing the execution order of processes.
 **main**
  Drives the entire process scheduling simulation.
    - Input: Collects the number of processes and their arrival_time and burst_time.
-   - SJF Calculation: Calls calculate_sjf_non_preemptive to execute the scheduling.
+   - SJF Calculation: Calls `calculate_sjf_non_preemptive` to execute the scheduling.
    - Display: Shows the Gantt chart and process summary.
    - Average Waiting Time: Calculates and prints the average waiting time.
 
