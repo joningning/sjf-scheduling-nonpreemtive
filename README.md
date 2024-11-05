@@ -9,7 +9,7 @@ Shortest Job First scheduling algorithm written in Python that calculates waitin
 
 ## Explanation of the Code
 
-** Process **
+1. ** Process **
 This Process class defines the attributes for each process:
   - pid: Process ID (e.g., A, B, C).
   - arrival_time: Time when the process arrives.
