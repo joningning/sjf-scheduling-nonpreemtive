@@ -17,11 +17,11 @@ This Process class defines the attributes for each process:
   - completion_time, turnaround_time, waiting_time: Calculated during scheduling.
 
 **calculate_sjf_non_preemptive**
-Implements the SJF non-preemptive scheduling.
+- Implements the SJF non-preemptive scheduling.
   - Ready Queue: Select processes that have arrived (arrival_time <= current_time).
   - Idle CPU: If no process is ready, the CPU idles until the next process arrives.
   - Shortest Job Selection: From the ready queue, select the process with the shortest burst_time.
-  Time Updates:
+  - Time Updates:
     - completion_time: When the process finishes.
     - turnaround_time: Total time taken from arrival to completion (completion_time - arrival_time).
     - waiting_time: Time spent waiting (turnaround_time - burst_time).
@@ -33,10 +33,10 @@ Displays a Gantt chart showing the execution order of processes.
   - Displays time intervals when each process finishes.
 
 **print_process_summary**
-Iterates through the completed processes and prints the relevant information (pid, arrival_time, burst_time, etc.).
+- Iterates through the completed processes and prints the relevant information (pid, arrival_time, burst_time, etc.).
 
-** calculate_average_waiting_time **
-Calculates the average waiting time of all processes. Sums up the waiting_time of all processes and divides by the number of processes.
+**calculate_average_waiting_time**
+- Calculates the average waiting time of all processes. Sums up the waiting_time of all processes and divides by the number of processes.
 
 **main**
  Drives the entire process scheduling simulation.
